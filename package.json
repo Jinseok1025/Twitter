@@ -6,15 +6,19 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app"
+    "start": "nodemon auths"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "express": "^4.19.2",
-    "morgan": "^1.10.0",
-    "nodemon": "^3.1.0",
-    "save-dev": "^0.0.1-security"
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0"
   }
 }
