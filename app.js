@@ -2,7 +2,10 @@ import express from "express";
 import morgan from "morgan";
 import tweetsRouter from './router/tweets.js';
 import authRouter from './router/auth.js';
+import {config} from "./config.js";
 
+
+                      
 const app = express();
 
 app.use(express.json());
@@ -16,4 +19,4 @@ app.use((req, res, next) => {
 });
 
 
-app.listen(8080)
+app.listen(config.host.port);
